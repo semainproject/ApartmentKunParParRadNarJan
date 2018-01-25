@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "312910376612",
+    "firebase_url": "https://apartmentkunparparradnarjan.firebaseio.com",
+    "project_id": "apartmentkunparparradnarjan",
+    "storage_bucket": "apartmentkunparparradnarjan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312910376612:android:16422c4722109b1b",
+        "android_client_info": {
+          "package_name": "com.example.narathorn.apartmentkunparparradnarjan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312910376612-vdkh3thko8lg4fvc2gddnhejcra6jnt2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.narathorn.apartmentkunparparradnarjan",
+            "certificate_hash": "747d246cc9d2d5a5567ae7ef7c61b01fe90966c6"
+          }
+        },
+        {
+          "client_id": "312910376612-a061emifte3o2088e2ia2s2mfgcvmlo8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqE2v8-1siPchcMW0b_9jQpnP7a2SQXZI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "312910376612-a061emifte3o2088e2ia2s2mfgcvmlo8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
