@@ -30,6 +30,13 @@ public class LoginActivity extends AppCompatActivity {
         passWord = (EditText) findViewById(R.id.passWord);
         signInBtn = (Button) findViewById(R.id.signInBtn);
         SharedPreferences shared = getSharedPreferences("login_pref",Context.MODE_PRIVATE);
+        final SharedPreferences.Editor editor = shared.edit();
+        boolean booleanValue = shared.getBoolean("isLogin", false);
+        if(booleanValue == true){
+            Toast.makeText(LoginActivity.this,"You are loging in",Toast.LENGTH_LONG).show();
+            Intent i = new Intent(LoginActivity.this,MainActivity.class);
+            startActivity(i);
+        }
         signInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +48,10 @@ public class LoginActivity extends AppCompatActivity {
                             if(password.equals(passWord.getText().toString())){
                                 //Intent i = new Intent(LoginActivity.this,)
                                 Toast.makeText(LoginActivity.this,"Thank you for loging in",Toast.LENGTH_LONG).show();
+                                editor.putString("roomNumber",roomNumber.getText().toString());
+                                editor.putString("password", passWord.getText().toString());
+                                editor.putBoolean("isLogin", true);
+                                editor.commit();
                             }else{
                                 Toast.makeText(LoginActivity.this,"Your Password Is Not Correct",Toast.LENGTH_LONG).show();
                             }
