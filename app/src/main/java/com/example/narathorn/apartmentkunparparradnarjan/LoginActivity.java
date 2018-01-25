@@ -41,17 +41,19 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(!(roomNumber.getText().equals(""))) {
-                    myRef.child(roomNumber.getText().toString()).child("PASSWORD").addValueEventListener(new ValueEventListener() {
+                    myRef.child(roomNumber.getText().toString()).child("password").addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
                             String password = dataSnapshot.getValue(String.class);
                             if(password.equals(passWord.getText().toString())){
-                                //Intent i = new Intent(LoginActivity.this,)
+
                                 Toast.makeText(LoginActivity.this,"Thank you for loging in",Toast.LENGTH_LONG).show();
                                 editor.putString("roomNumber",roomNumber.getText().toString());
                                 editor.putString("password", passWord.getText().toString());
                                 editor.putBoolean("isLogin", true);
                                 editor.commit();
+                                Intent i = new Intent(LoginActivity.this,MainActivity.class);
+                                startActivity(i);
                             }else{
                                 Toast.makeText(LoginActivity.this,"Your Password Is Not Correct",Toast.LENGTH_LONG).show();
                             }
