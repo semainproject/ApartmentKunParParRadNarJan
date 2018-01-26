@@ -75,10 +75,10 @@ public class MainActivity extends AppCompatActivity {
                         int totalCost = electricCost + waterCost + settingGetter.getRoomPrice();
 
                         //Set TextView
-                        totalText.setText(String.valueOf(totalCost));
-                        electricText.setText(String.valueOf(electricCost));
-                        waterText.setText(String.valueOf(waterCost));
-                        costText.setText(String.valueOf(settingGetter.getRoomPrice()));
+                        totalText.setText(String.valueOf(totalCost)+" บาท");
+                        electricText.setText(String.valueOf(electricCost)+" บาท");
+                        waterText.setText(String.valueOf(waterCost)+" บาท");
+                        costText.setText(String.valueOf(settingGetter.getRoomPrice())+" บาท");
                     }
 
                     @Override
