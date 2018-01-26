@@ -8,7 +8,7 @@
     tools:layout_editor_absoluteY="81dp">
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/totalText"
         android:layout_width="101dp"
         android:layout_height="101dp"
         android:layout_centerInParent="true"
@@ -16,9 +16,9 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/circulat_textview_drawable"
         android:gravity="center"
-        android:text="HAHAHAHAHA"
+        android:text="Loading.."
         android:textColor="@color/colorPrimary"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/electricText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,40 +26,40 @@
         app:layout_constraintVertical_bias="0.51" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/electricText"
         android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="50dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        android:text="Loading.."
+        app:layout_constraintBottom_toTopOf="@+id/waterText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/totalText" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/waterText"
         android:layout_width="0dp"
         android:layout_height="47dp"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="48dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        android:text="Loading.."
+        app:layout_constraintBottom_toTopOf="@+id/costText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/electricText" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/costText"
         android:layout_width="0dp"
         android:layout_height="47dp"
         android:layout_marginBottom="150dp"
         android:layout_marginEnd="50dp"
-        android:text="TextView"
+        android:text="Loading.."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/waterText" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -70,7 +70,7 @@
         android:layout_marginStart="53dp"
         android:layout_marginTop="170dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/electricText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_bolt" />
@@ -84,7 +84,7 @@
         android:layout_marginStart="53dp"
         android:layout_marginTop="7dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/waterText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/ic_drop" />
@@ -97,9 +97,21 @@
         android:layout_marginEnd="13dp"
         android:layout_marginStart="53dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/costText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/ic_apartment" />
+
+    <Button
+        android:id="@+id/detailBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="more details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
